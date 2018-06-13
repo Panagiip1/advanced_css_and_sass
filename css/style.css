@@ -111,7 +111,7 @@ body {
 		animation-iteration-count: 3;
 		animation-delay: 3s; 
 		*/ }
-    @media (max-width: 37.5emp) {
+    @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-family: 5rem; } }
@@ -122,7 +122,7 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
     /*600px*/ }
-    @media (max-width: 37.5emp) {
+    @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
 
@@ -141,7 +141,7 @@ body {
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media (max-width: 37.5emp) {
+  @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -645,10 +645,16 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
-  /*900px*/ }
+  /*900px*/
+  /*600px*/ }
   @media (max-width: 56.25em) {
     .story {
-      width: 100%; } }
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -658,14 +664,22 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    position: relative; }
+    position: relative;
+    /*600px*/ }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__img {
     height: 140%;
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     transition: all .5s; }
   .story__text {
-    transform: skewX(12deg); }
+    transform: skewX(12deg);
+    /*600px*/ }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -795,7 +809,7 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
   /*600px*/ }
-  @media (max-width: 37.5emp) {
+  @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
@@ -835,7 +849,7 @@ body {
       .navigation__button {
         top: 4rem;
         right: 4rem; } }
-    @media (max-width: 37.5emp) {
+    @media (max-width: 37.5em) {
       .navigation__button {
         top: 3rem;
         right: 3rem; } }
@@ -856,7 +870,7 @@ body {
       .navigation__background {
         top: 4.5rem;
         right: 4.5rem; } }
-    @media (max-width: 37.5emp) {
+    @media (max-width: 37.5em) {
       .navigation__background {
         top: 3.5rem;
         right: 3.5rem; } }
